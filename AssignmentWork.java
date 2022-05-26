@@ -134,7 +134,7 @@ public class AssignmentWork {
                 System.out.println("Wrong");
             case 3: 
                 System.out.println("Correct!");
-                score += 1;++
+                score += 1;
             case 4: 
                 System.out.println("Wrong");
         }
