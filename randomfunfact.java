@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class randomfunfact
 {
-    public void randomfunfact(String[] args) 
+    public static void main(String[] args) 
     {
         Random dice = new Random();
         int diceres = 0;
@@ -15,6 +15,8 @@ public class randomfunfact
         {
             diceres = dice.nextInt(10)+1;
         }
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
         switch (diceres)
         {
             case 1:
