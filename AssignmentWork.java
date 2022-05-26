@@ -2,23 +2,10 @@
 package AssignmentJava;
 
 import java.util.Scanner;
-import java.util.Random;
+
 
 public class AssignmentWork {
     
-    public void FunFact(){
-        Random rand = new Random();
-        
-        int randFact = rand.nextInt(10)+1;
-        switch (randFact){
-            case 1 :
-                
-            
-        }
-            
-        
-    }
-
     public int Quiz() {
         int score = 0;
         Scanner userInput = new Scanner (System.in);
@@ -173,9 +160,12 @@ public class AssignmentWork {
     
     
     public void MBTI() {
+
+        //I have the string broken so that I can have the code in new lines instead of a single long line. Nicer on the eyes 4 me :)
         System.out.println("Welcome to 21Green's Climate Change MBTI Assignment!\n"
         + "\nYou may enter your personality type according to the MBTI test and be assigned a specific class which identifies\n"
-        + "what type of defender you are against climate change. E.g.: INFP");
+        + "what type of defender you are against climate change. E.g.: INFP"
+        + "If you have do not know your personality type, you may take the MBTI test at https://www.16personalities.com/free-personality-test");
         Scanner userInput = new Scanner(System.in);
         String userMBTI = userInput.next();
         
@@ -206,7 +196,14 @@ public class AssignmentWork {
 
             case "ESFJ":
 
-                
+            case "ISTP":
+
+            case "ISFP":
+
+            case "ESTP":
+
+            case "ESFP":
+
             default:
                 
             
