@@ -1,44 +1,38 @@
 
-package assignmentwork;
+package AssignmentJava;
 
 import java.util.Scanner;
-import java.util.Random;
 
-public class AssignmentWork {
+
+public class AssignmentWork 
+{
     
-    public int FunFact(){
-        Random rand = new Random();
-        
-        int randFact = rand.nextInt(10)+1;
-        switch (randFact){
-            case 1:
-                
-            
-        }
-            
-        
-    }
-
-    public int Quiz(int score) {
-        score = 0;
+    public int Quiz() {
+        int score = 0;
         Scanner userInput = new Scanner (System.in);
         System.out.println("Welcome to Green21's Climate Change Quiz!");
-        System.out.println("We'll be giving you a series of question to test your knoweldge on Climate Change and "
-                + "assign you a score based on your answers!");
-        System.out.println("So let's begin!");
+        System.out.println("We'll be giving you a series of questions to test your knoweldge on Climate Change and\nassign you a score based on your answers!");     
+        System.out.println("So let's begin!\n\n");
+
+        System.out.println("What does Climate Change mean?\n\n1 - A change in seasons\n\n2 - A change in your country's weather\n\n3 - A change in global or regional climate patterns\n\n4 - A change in lifestyle based on the climate\n\nType in your answer:");
+
         
         int answer1 = userInput.nextInt();
         
         switch (answer1){
             case 1: 
                 System.out.println("Wrong");
+                break;
             case 2:
                 System.out.println("Wrong");
+                break;
             case 3: 
                 System.out.println("Correct!");
                 score += 1;
+                break;
             case 4: 
                 System.out.println("Wrong");
+                break;
         }
         
         int answer2 = userInput.nextInt();
@@ -134,7 +128,7 @@ public class AssignmentWork {
                 System.out.println("Wrong");
             case 3: 
                 System.out.println("Correct!");
-                score += 1;++
+                score += 1;
             case 4: 
                 System.out.println("Wrong");
         }
@@ -167,58 +161,63 @@ public class AssignmentWork {
                 System.out.println("Wrong");
         }
         
+        userInput.close();
+
         return score;          
     }
     
-    public String MBTI() {
-        System.out.println("Welcome to 21Green's Climate Change MBTI Assignment!");
+    
+    public void MBTI() {
+
+        //I have the string broken so that I can have the code in new lines instead of a single long line. Nicer on the eyes 4 me :)
+        System.out.println("Welcome to 21Green's Climate Change MBTI Assignment!\n"
+        + "\nYou may enter your personality type according to the MBTI test and be assigned a specific class which identifies\n"
+        + "what type of defender you are against climate change. E.g.: INFP"
+        + "If you have do not know your personality type, you may take the MBTI test at https://www.16personalities.com/free-personality-test");
         Scanner userInput = new Scanner(System.in);
-        int userMBTI = userInput.nextInt();
+        String userMBTI = userInput.next();
         
-        switch (userMBTI){
+        switch (userMBTI)
+        {
             
-            case 1:
-                
-            case 2:
-                
-            case 3:
-                
-            case 4:
-                
-            case 5:
-                
-            case 6:
-                
-            case 7:
-                
-            case 8:
-                
-            case 9:
-                
-            case 10:
-                
-            case 11:
-                
-            case 12:
-                
-            case 13:
-                
-            case 14:
-                
-            case 15:
-                
-            case 16:
-                
+            case "INTJ":
+
+            case "INTP":
+
+            case "ENTJ":
+
+            case "ENTP":
+
+            case "INFJ":
+
+            case "INFP":
+
+            case "ENFJ":
+
+            case "ENFP":
+
+            case "ISTJ":
+
+            case "ISFJ":
+
+            case "ESTJ":
+
+            case "ESFJ":
+
+            case "ISTP":
+
+            case "ISFP":
+
+            case "ESTP":
+
+            case "ESFP":
+
             default:
                 
             
         }
-        
-        stringTest
-        
-        switch (stringTest){
-            
-        }
+
+        userInput.close();
         
     }
     
