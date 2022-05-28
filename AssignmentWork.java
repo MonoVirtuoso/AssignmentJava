@@ -4,22 +4,56 @@ package AssignmentJava;
 import java.util.Scanner;
 
 
-public class AssignmentWork 
-{
+
+public class AssignmentWork {
+
+    private int verifyInput()
+	{
+        int usrInput = -1;
+        Scanner kb = new Scanner(System.in);
+
+		while(usrInput < 0 || usrInput > 4)
+		{
+			try
+			{
+				System.out.print("\nEnter your selection : ");
+				usrInput = Integer.parseInt(kb.nextLine()); 
+			}
+			catch(NumberFormatException e)
+			{
+				System.out.println("Invalid Selection. Please Try again.");
+			}
+		}
+
+		return(usrInput);
+	}
+
     
     public int Quiz() {
         int score = 0;
-        Scanner userInput = new Scanner (System.in);
         System.out.println("Welcome to Green21's Climate Change Quiz!");
-        System.out.println("We'll be giving you a series of questions to test your knoweldge on Climate Change and\nassign you a score based on your answers!");     
-        System.out.println("So let's begin!\n\n");
+        System.out.println("We'll be giving you a series of question to test your knoweldge on Climate Change and\nassign you a score based on your answers!");
+        System.out.println("So let's begin!");
+        
+        int answer = verifyInput();
+        
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+            case 3: 
+                System.out.println("Correct!");
+                score += 1;
+                break;
+            case 4: 
+                System.out.println("Wrong");
+        }
 
-        System.out.println("What does Climate Change mean?\n\n1 - A change in seasons\n\n2 - A change in your country's weather\n\n3 - A change in global or regional climate patterns\n\n4 - A change in lifestyle based on the climate\n\nType in your answer:");
+        answer = verifyInput();
 
-        
-        int answer1 = userInput.nextInt();
-        
-        switch (answer1){
+        switch (answer){
             case 1: 
                 System.out.println("Wrong");
                 break;
@@ -27,142 +61,149 @@ public class AssignmentWork
                 System.out.println("Wrong");
                 break;
             case 3: 
-                System.out.println("Correct!");
-                score += 1;
-                break;
-            case 4: 
                 System.out.println("Wrong");
                 break;
-        }
-        
-        int answer2 = userInput.nextInt();
-        
-        switch (answer2){
-            case 1: 
-                System.out.println("Wrong");
-            case 2:
-                System.out.println("Wrong");
-            case 3: 
-                System.out.println("Correct!");
-                score += 1;
             case 4: 
                 System.out.println("Wrong");
+                break;
         }
-        
-        int answer3 = userInput.nextInt();
-        
-        switch (answer3){
-            case 1: 
-                System.out.println("Wrong");
-            case 2:
-                System.out.println("Wrong");
-            case 3: 
-                System.out.println("Correct!");
-                score += 1;
-            case 4: 
-                System.out.println("Wrong");
-        }
-        
-        int answer4 = userInput.nextInt();
-        
-        switch (answer4){
-            case 1: 
-                System.out.println("Wrong");
-            case 2:
-                System.out.println("Wrong");
-            case 3: 
-                System.out.println("Correct!");
-                score += 1;
-            case 4: 
-                System.out.println("Wrong");
-        }
-        
-        int answer5 = userInput.nextInt();
-        
-        switch (answer5){
-            case 1: 
-                System.out.println("Wrong");
-            case 2:
-                System.out.println("Wrong");
-            case 3: 
-                System.out.println("Correct!");
-                score += 1;
-            case 4: 
-                System.out.println("Wrong");
-        }
-        
-        int answer6 = userInput.nextInt();
-        
-        switch (answer6){
-            case 1: 
-                System.out.println("Wrong");
-            case 2:
-                System.out.println("Wrong");
-            case 3: 
-                System.out.println("Correct!");
-                score += 1;
-            case 4: 
-                System.out.println("Wrong");
-        }
-        
-        int answer7 = userInput.nextInt();
-        
-        switch (answer7){
-            case 1: 
-                System.out.println("Wrong");
-            case 2:
-                System.out.println("Wrong");
-            case 3: 
-                System.out.println("Correct!");
-                score += 1;
-            case 4: 
-                System.out.println("Wrong");
-        }
-        
-        int answer8 = userInput.nextInt();
-        
-        switch (answer8){
-            case 1: 
-                System.out.println("Wrong");
-            case 2:
-                System.out.println("Wrong");
-            case 3: 
-                System.out.println("Correct!");
-                score += 1;
-            case 4: 
-                System.out.println("Wrong");
-        }
-        
-        int answer9 = userInput.nextInt();
-        
-        switch (answer9){
-            case 1: 
-                System.out.println("Wrong");
-            case 2:
-                System.out.println("Wrong");
-            case 3: 
-                System.out.println("Correct!");
-                score += 1;
-            case 4: 
-                System.out.println("Wrong");
-        }
-        
-        int answer10 = userInput.nextInt();
-        
-        switch (answer10){
-            case 1: 
-                System.out.println("Wrong");
-            case 2:
-                System.out.println("Wrong");
-            case 3: 
-                System.out.println("Correct!");
-                score += 1;
-            case 4: 
-                System.out.println("Wrong");
-        }
-        
-        userInput.close();
 
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+        
         return score;          
     }
     
@@ -176,6 +217,7 @@ public class AssignmentWork
         + "If you have do not know your personality type, you may take the MBTI test at https://www.16personalities.com/free-personality-test");
         Scanner userInput = new Scanner(System.in);
         String userMBTI = userInput.next();
+
         
         switch (userMBTI)
         {
