@@ -35,6 +35,8 @@ public class AssignmentWork {
         System.out.println("We'll be giving you a series of question to test your knoweldge on Climate Change and\nassign you a score based on your answers!");
         System.out.println("So let's begin!");
         
+
+        
         int answer = verifyInput();
         
         switch (answer){
