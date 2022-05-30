@@ -41,10 +41,10 @@ public class AssignmentWork
             case 1: 
                 System.out.println("Wrong");
             case 2:
-                System.out.println("Wrong");
-            case 3: 
                 System.out.println("Correct!");
                 score += 1;
+            case 3: 
+                System.out.println("Wrong");
             case 4: 
                 System.out.println("Wrong");
         }
@@ -53,12 +53,12 @@ public class AssignmentWork
         
         switch (answer3){
             case 1: 
-                System.out.println("Wrong");
+                System.out.println("Correct!");
+                score += 1;
             case 2:
                 System.out.println("Wrong");
             case 3: 
-                System.out.println("Correct!");
-                score += 1;
+                System.out.println("Wrong");
             case 4: 
                 System.out.println("Wrong");
         }
@@ -219,6 +219,21 @@ public class AssignmentWork
 
         userInput.close();
         
+    }
+
+    public void NasaReport()
+    {
+
+    }
+
+    public void Login()
+    {
+
+    }
+
+    public void Registration()
+    {
+
     }
     
     
