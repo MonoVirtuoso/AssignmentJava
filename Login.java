@@ -28,6 +28,7 @@ public class Login {
             int reply_for_premenu = Scanner1.nextInt();
             System.out.println("");
 
+
             if (reply_for_premenu == 2 && registered_user == false) {             // ######### REGISTER MENU #########
                 System.out.println("***   REGISTER MENU   ***");
 
