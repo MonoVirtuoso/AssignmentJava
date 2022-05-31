@@ -12,12 +12,16 @@ public class AssignmentWork {
         int usrInput = -1;
         Scanner kb = new Scanner(System.in);
 
-		while(usrInput < 0 || usrInput > 4)
+		while(usrInput < 1 || usrInput > 4)
 		{
 			try
 			{
 				System.out.print("\nEnter your selection : ");
 				usrInput = Integer.parseInt(kb.nextLine()); 
+                if (usrInput < 1 || usrInput > 4)
+                    {
+                        System.out.println("Invalid Selection. Please Try again.");
+                    }
 			}
 			catch(NumberFormatException e)
 			{
@@ -25,14 +29,15 @@ public class AssignmentWork {
 			}
 		}
 
+
 		return(usrInput);
 	}
 
     
     public int Quiz() {
         int score = 0;
-        System.out.println("Welcome to Green21's Climate Change Quiz!");
-        System.out.println("We'll be giving you a series of question to test your knoweldge on Climate Change and\nassign you a score based on your answers!");
+        System.out.println("Welcome to Green21's Climate Change Quiz!\n");
+        System.out.println("We'll be giving you a series of question to test your knoweldge on Climate Change and\nassign you a score based on your answers!\n");
         System.out.println("So let's begin!");
         System.out.println("\n\nWhat is Climate Change?\n\n1 - \n2 - \n3 - \n4 - \n");  
         
@@ -46,12 +51,14 @@ public class AssignmentWork {
                 break;
             case 2:
                 System.out.println("Wrong");
+                break;
             case 3: 
                 System.out.println("Correct!");
                 score += 1;
                 break;
             case 4: 
                 System.out.println("Wrong");
+                break;
         }
 
         System.out.println("\n\nWhat is a Carbon Footprint?\n\n1 - \n2 - \n3 - \n4 - \n"); 
@@ -173,12 +180,8 @@ public class AssignmentWork {
             case 2:
                 System.out.println("Wrong");
                 break;
-            case 3: 
-                System.out.println("Wrong");
-                break;
-            case 4: 
-                System.out.println("Wrong");
-                break;
+            default:
+                System.out.println("Please enter a valid answer: ");
         }
 
         System.out.println("\n\nWhat date does Earth Day take place?\n\n1 - \n2 - \n3 - \n4 - \n"); 

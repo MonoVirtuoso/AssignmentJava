@@ -106,14 +106,15 @@ public class Login {
             System.out.println("|=======================|");
             System.out.println("|       MAIN MENU       |");
             System.out.println("|=======================|");
-            System.out.println("1- Menu 1");
-            System.out.println("2- Menu 2");
-            System.out.println("3- Menu 3");
-            System.out.println("4- Menu 4");
+            System.out.println("1- Climate Change Infodesk 1");
+            System.out.println("2- Climate Change Quiz 2");
+            System.out.println("3- Climate Change Personality 3");
+            System.out.println("4- Random Climate Change Facts 4");
             System.out.println("5- Back to PRE MENU");
             System.out.print("Select your choice: ");
             reply_for_mainmenu = Scanner3.nextInt();
             System.out.println("");
+            AssignmentWork method = new AssignmentWork();
 
             // Methods
             if (reply_for_mainmenu == 1) {
@@ -121,11 +122,10 @@ public class Login {
             } // Menu 1:
 
             else if (reply_for_mainmenu == 2) {
-                System.out.println();
-            } // Menu 2:
-
+                method.Quiz();
+            } // Menu 2
             else if (reply_for_mainmenu == 3) {
-                System.out.println();
+                method.MBTI();
             } // Menu 3:
 
             else if (reply_for_mainmenu == 4) {
