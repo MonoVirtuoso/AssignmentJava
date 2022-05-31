@@ -34,6 +34,7 @@ public class AssignmentWork {
         System.out.println("Welcome to Green21's Climate Change Quiz!");
         System.out.println("We'll be giving you a series of question to test your knoweldge on Climate Change and\nassign you a score based on your answers!");
         System.out.println("So let's begin!");
+        System.out.println("\n\nWhat is Climate Change?\n\n1 - \n2 - \n3 - \n4 - \n");  
         
 
         
@@ -53,22 +54,7 @@ public class AssignmentWork {
                 System.out.println("Wrong");
         }
 
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-            case 3: 
-                System.out.println("Wrong");
-                break;
-            case 4: 
-                System.out.println("Wrong");
-                break;
-        }
+        System.out.println("\n\nWhat is a Carbon Footprint?\n\n1 - \n2 - \n3 - \n4 - \n"); 
 
         answer = verifyInput();
 
@@ -87,22 +73,7 @@ public class AssignmentWork {
                 break;
         }
 
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-            case 3: 
-                System.out.println("Wrong");
-                break;
-            case 4: 
-                System.out.println("Wrong");
-                break;
-        }
+        System.out.println("\n\nWhat is a Greenhouse Gas?\n\n1 - \n2 - \n3 - \n4 - \n"); 
 
         answer = verifyInput();
 
@@ -121,22 +92,7 @@ public class AssignmentWork {
                 break;
         }
 
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-            case 3: 
-                System.out.println("Wrong");
-                break;
-            case 4: 
-                System.out.println("Wrong");
-                break;
-        }
+        System.out.println("\n\nWhich of the following is untrue?\n\n1 - \n2 - \n3 - \n4 - \n"); 
 
         answer = verifyInput();
 
@@ -155,22 +111,7 @@ public class AssignmentWork {
                 break;
         }
 
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-            case 3: 
-                System.out.println("Wrong");
-                break;
-            case 4: 
-                System.out.println("Wrong");
-                break;
-        }
+        System.out.println("\n\nWhat does the term renewable energy mean?\n\n1 - \n2 - \n3 - \n4 - \n"); 
 
         answer = verifyInput();
 
@@ -189,6 +130,8 @@ public class AssignmentWork {
                 break;
         }
 
+        System.out.println("\n\nWhat does the term carbon neutrality mean?\n\n1 - \n2 - \n3 - \n4 - \n"); 
+
         answer = verifyInput();
 
         switch (answer){
@@ -205,6 +148,78 @@ public class AssignmentWork {
                 System.out.println("Wrong");
                 break;
         }
+
+        System.out.println("\n\nMisinformation presents a threat towards attempts to combat climate change. Is that statement true or false?\n\n1 - \n2 - \n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+        }
+
+        System.out.println("\n\nRenewable energy is one of the solutions towards a greener future. Is that statement true or false?\n\n1 - \n2 - \n3 - \n4 - \n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        System.out.println("\n\nWhat date does Earth Day take place?\n\n1 - \n2 - \n3 - \n4 - \n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        System.out.println("\n\nWhich of these is not an alternative renewable energy resource?\n\n1 - \n2 - \n3 - \n4 - \n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        System.out.println("Congratulations! Your score for the quiz is " + score);
         
         return score;          
     }
@@ -216,7 +231,7 @@ public class AssignmentWork {
         System.out.println("Welcome to 21Green's Climate Change MBTI Assignment!\n"
         + "\nYou may enter your personality type according to the MBTI test and be assigned a specific class which identifies\n"
         + "what type of defender you are against climate change. E.g.: INFP"
-        + "If you have do not know your personality type, you may take the MBTI test at https://www.16personalities.com/free-personality-test");
+        + "If you have do not know your personality type, you may take the MBTI test at https://www.16personalities.com/free-personality-test\n\n");
         Scanner userInput = new Scanner(System.in);
         String userMBTI = userInput.next();
 
