@@ -225,6 +225,8 @@ public class AssignmentWork {
         {
             
             case "INTJ":
+                System.out.println("It works.");
+                break;
 
             case "INTP":
 
@@ -264,6 +266,12 @@ public class AssignmentWork {
         userInput.close();
         
     }
+
+    public void NasaReport()
+    {
+
+    }
+
     
     
 }
