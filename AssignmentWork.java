@@ -29,9 +29,38 @@ public class AssignmentWork {
 			}
 		}
 
+        return (usrInput);
 
-		return(usrInput);
-	}
+    }
+
+    public String verifyStringInput()
+    {
+        Boolean checker = false;
+        String[] allowedEntries = {"INTJ", "INTP", "ENTJ", "ENTP", "INJF", "INFP", "ENFJ", "ENFP", "ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP"};
+        String usrMBTI = "";
+        while (checker == false)  {  
+            Scanner userInput = new Scanner(System.in);
+            usrMBTI = userInput.next();
+            for (int i = 0; i < 16; i++)
+            {
+                if (usrMBTI.equals(allowedEntries[i])) 
+                {
+                    checker = true;
+                    break;
+                }
+            }
+            if(checker == false)
+            {
+                System.out.println("Incorrect value entered, please enter one of the personality types. E.g. : ENTJ");
+            }
+        }    
+
+        return (usrMBTI);
+    }
+    
+
+
+
 
     
     public int Quiz() {
@@ -39,7 +68,7 @@ public class AssignmentWork {
         System.out.println("Welcome to Green21's Climate Change Quiz!\n");
         System.out.println("We'll be giving you a series of question to test your knoweldge on Climate Change and\nassign you a score based on your answers!\n");
         System.out.println("So let's begin!");
-        System.out.println("\n\nWhat is Climate Change?\n\n1 - \n2 - \n3 - \n4 - \n");  
+        System.out.println("\n\nWhat is Climate Change?\n\n1 - The changing of seasons in a year\n2 - Long term shifts in global weather patterns and temperatures\n3 - The changing of night to day\n4 - The changing of weathers when moving from one country to another\n");  
         
 
         
@@ -50,11 +79,11 @@ public class AssignmentWork {
                 System.out.println("Wrong");
                 break;
             case 2:
-                System.out.println("Wrong");
-                break;
-            case 3: 
                 System.out.println("Correct!");
                 score += 1;
+                break;
+            case 3: 
+                System.out.println("Wrong");
                 break;
             case 4: 
                 System.out.println("Wrong");
@@ -180,8 +209,6 @@ public class AssignmentWork {
             case 2:
                 System.out.println("Wrong");
                 break;
-            default:
-                System.out.println("Please enter a valid answer: ");
         }
 
         System.out.println("\n\nWhat date does Earth Day take place?\n\n1 - \n2 - \n3 - \n4 - \n"); 
@@ -235,15 +262,15 @@ public class AssignmentWork {
         + "\nYou may enter your personality type according to the MBTI test and be assigned a specific class which identifies\n"
         + "what type of defender you are against climate change. E.g.: INFP"
         + "If you have do not know your personality type, you may take the MBTI test at https://www.16personalities.com/free-personality-test\n\n");
-        Scanner userInput = new Scanner(System.in);
-        String userMBTI = userInput.next();
-
         
-        switch (userMBTI)
+
+        String userAnswer = verifyStringInput();
+        
+        switch (userAnswer)
         {
             
             case "INTJ":
-                System.out.println("It works.");
+                System.out.println("\n\nIt works.");
                 break;
 
             case "INTP":
@@ -280,8 +307,6 @@ public class AssignmentWork {
                 
             
         }
-
-        userInput.close();
         
     }
 

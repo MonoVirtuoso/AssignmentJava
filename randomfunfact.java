@@ -1,4 +1,4 @@
-// package randomfunfactwork;
+package AssignmentJava;
 
 import java.util.Random;
 
@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class randomfunfact
 {
-    public static void main(String[] args) 
+    public void randomFF() 
     {
         Random dice = new Random();
         int diceres = 0;

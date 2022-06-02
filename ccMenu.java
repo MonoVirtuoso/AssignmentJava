@@ -1,3 +1,5 @@
+package AssignmentJava;
+
 import java.util.Scanner;
 
 public class ccMenu
@@ -160,7 +162,7 @@ public class ccMenu
 				break;
 		}
 	}
-	
+
 	private void ccEffects()
 	{
 		int exitInt = -1;
