@@ -278,20 +278,36 @@ public class AssignmentWork {
         {
             
             case "INTJ":
+                System.out.println("You are one of the Informed");
+                System.out.println("Determined and rational, you contribute to the fight against Climate Change by ensuring the information\nconsumed is correct and evidence-based, thereby negating the effects of misinformation.");
 
             case "INTP":
+                System.out.println("You are one of the Innovators");
+                System.out.println("Driven by curiosity and receptive to new ideas,the Innovator contribute to Climate Change by finding creative solutions\nto combat Climate Change, be it an invention or method to do so.");
 
             case "ENTJ":
+                System.out.println("You are one of the Leaders");
+                System.out.println("");
 
             case "ENTP":
+                System.out.println("You are one of the Charismatics");
+                System.out.println("");
 
             case "INFJ":
+                System.out.println("You are one of the Principled")
+                System.out.println("");
 
             case "INFP":
+                System.out.println("You are one of the Empathetic");
+                System.out.println("");
 
             case "ENFJ":
+                System.out.println("You are one of the Altruistics");
+                System.out.println("");
 
             case "ENFP":
+                System.out.println("You are one of the Enthusiasts");
+                System.out.println("");
 
             case "ISTJ":
 
