@@ -90,7 +90,7 @@ public class AssignmentWork {
                 break;
         }
 
-        System.out.println("\n\nWhat is a Carbon Footprint?\n\n1 - \n2 - \n3 - \n4 - \n"); 
+        System.out.println("\n\nWhat is a Carbon Footprint?\n\n1 - The footprint left behind when carbon is on the groun\n2 - The carbon emitted from mining carbon resources\n3 - Natural Gases mixed with carbon\n4 - The sum of greenhouse gas emissions from an event, organization or individual\n"); 
 
         answer = verifyInput();
 
@@ -105,11 +105,31 @@ public class AssignmentWork {
                 System.out.println("Wrong");
                 break;
             case 4: 
+                System.out.println("Correct!");
+                score += 1;
+                break;
+        }
+        System.out.println("\n\nWhat is a Greenhouse Gas?\n\n1 - A gaseous compound able to emit and absorb radiant energy from within the thermal infrared range\n2 - Gases with the colour green\n3 - Gases emitted from houses that are green\n4 - Gases emitted from the plants inside of greenhouses\n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Correct!");
+                score += 1;
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
                 System.out.println("Wrong");
                 break;
         }
 
-        System.out.println("\n\nWhat is a Greenhouse Gas?\n\n1 - \n2 - \n3 - \n4 - \n"); 
+        System.out.println("\n\nWhich of the following is untrue?\n\n1 - Climate Change is a threat to mankind's future\n2 - Misinformation is one of the biggest threats for actions against Climate Change\n3 - Renewable energy is one of the best enviromental friendly solutions for preventing Climate Change\n4 - Climate Change will go away if we simply ignore it\n"); 
 
         answer = verifyInput();
 
@@ -124,11 +144,100 @@ public class AssignmentWork {
                 System.out.println("Wrong");
                 break;
             case 4: 
+                System.out.println("Correct!");
+                score += 1;
+                break;
+        }
+
+        System.out.println("\n\nWhat does the term renewable energy mean?\n\n1 - Energy that has to be renewed annually\n2 - Energy resources that are new\n3 - Energy that comes from natural resources on Earth that are not finite or exhaustible\n4 - Energy that comes from people that are not finite or exhaustible\n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+            case 3: 
+                System.out.println("Correct!");
+                score += 1;
+                break;
+            case 4: 
                 System.out.println("Wrong");
                 break;
         }
 
-        System.out.println("\n\nWhich of the following is untrue?\n\n1 - \n2 - \n3 - \n4 - \n"); 
+        System.out.println("\n\nWhat does the term carbon neutrality mean?\n\n1 - A neutral carbon resource used for energy\n2 - A state of net zero carbon dioxide emissions\n3 - Neutrality achieved from common carbon emissions amongst two countries\n4 - Carbon dioxide mixed with neutral carbon\n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Correct!");
+                score += 1;
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        System.out.println("\n\nMisinformation presents a threat towards attempts to combat climate change. Is that statement true or false?\n\n1 - True\n2 - False\n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Correct!");
+                score += 1;
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+        }
+
+        System.out.println("\n\nRenewable energy is one of the solutions towards a greener future. Is that statement true or false?\n\n1 - True\n2 - False\n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Correct!");
+                score += 1;
+                break;
+            case 2:
+                System.out.println("Wrong");
+                break;
+        }
+
+        System.out.println("\n\nWhat date does Earth Day take place?\n\n1 - 20th June\n2 - 22nd April\n3 - 1st August\n4 - 24th December\n"); 
+
+        answer = verifyInput();
+
+        switch (answer){
+            case 1: 
+                System.out.println("Wrong");
+                break;
+            case 2:
+                System.out.println("Correct!");
+                score += 1;
+                break;
+            case 3: 
+                System.out.println("Wrong");
+                break;
+            case 4: 
+                System.out.println("Wrong");
+                break;
+        }
+
+        System.out.println("\n\nWhich of these is not an alternative renewable energy resource?\n\n1 - Hydroelectric\n2 - Wind\n3 - Geothermal\n4 - Natural Gas\n"); 
 
         answer = verifyInput();
 
@@ -143,109 +252,8 @@ public class AssignmentWork {
                 System.out.println("Wrong");
                 break;
             case 4: 
-                System.out.println("Wrong");
-                break;
-        }
-
-        System.out.println("\n\nWhat does the term renewable energy mean?\n\n1 - \n2 - \n3 - \n4 - \n"); 
-
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-            case 3: 
-                System.out.println("Wrong");
-                break;
-            case 4: 
-                System.out.println("Wrong");
-                break;
-        }
-
-        System.out.println("\n\nWhat does the term carbon neutrality mean?\n\n1 - \n2 - \n3 - \n4 - \n"); 
-
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-            case 3: 
-                System.out.println("Wrong");
-                break;
-            case 4: 
-                System.out.println("Wrong");
-                break;
-        }
-
-        System.out.println("\n\nMisinformation presents a threat towards attempts to combat climate change. Is that statement true or false?\n\n1 - \n2 - \n"); 
-
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-        }
-
-        System.out.println("\n\nRenewable energy is one of the solutions towards a greener future. Is that statement true or false?\n\n1 - \n2 - \n3 - \n4 - \n"); 
-
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-        }
-
-        System.out.println("\n\nWhat date does Earth Day take place?\n\n1 - \n2 - \n3 - \n4 - \n"); 
-
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-            case 3: 
-                System.out.println("Wrong");
-                break;
-            case 4: 
-                System.out.println("Wrong");
-                break;
-        }
-
-        System.out.println("\n\nWhich of these is not an alternative renewable energy resource?\n\n1 - \n2 - \n3 - \n4 - \n"); 
-
-        answer = verifyInput();
-
-        switch (answer){
-            case 1: 
-                System.out.println("Wrong");
-                break;
-            case 2:
-                System.out.println("Wrong");
-                break;
-            case 3: 
-                System.out.println("Wrong");
-                break;
-            case 4: 
-                System.out.println("Wrong");
+                System.out.println("Correct!");
+                score += 1;
                 break;
         }
 
@@ -270,8 +278,6 @@ public class AssignmentWork {
         {
             
             case "INTJ":
-                System.out.println("\n\nIt works.");
-                break;
 
             case "INTP":
 
