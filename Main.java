@@ -3,6 +3,7 @@ package AssignmentJava;
 import java.util.Scanner;
 
 public class Main {
+    
 
     static void clearTerminal(){        
         System.out.print("\033[H\033[2J");
@@ -16,6 +17,7 @@ public class Main {
     private static int reply_for_mainmenu;
 
     static void preMenu() {
+        AssignmentWork method = new AssignmentWork();
         Scanner Scanner1 = new Scanner(System.in);
         Scanner Scanner2 = new Scanner(System.in);
         boolean loggedin_user = false;
@@ -23,7 +25,6 @@ public class Main {
         boolean done_with_program = false;
 
         while (done_with_program == false && loggedin_user == false) {
-            clearTerminal();
             System.out.println("|=======================|");
             System.out.println("|        PRE MENU       |");
             System.out.println("|=======================|");
@@ -31,7 +32,7 @@ public class Main {
             System.out.println("2- Register");
             System.out.println("3- Exit");
             System.out.print("Select your choice: ");
-            int reply_for_premenu = Scanner1.nextInt();
+            int reply_for_premenu = method.verifyPMInput();
             System.out.println("");
 
 
@@ -48,6 +49,7 @@ public class Main {
                 password_register = Scanner2.nextLine();
 
                 System.out.println("");
+                clearTerminal();
                 System.out.println("Successfully registered!");
                 registered_user = true;
                 System.out.println("");
@@ -70,18 +72,20 @@ public class Main {
                     loggedin_user = true;
                     System.out.println("");
                 } else {
-                    System.out.println("");
+                    clearTerminal();
                     System.out.println("Username or password is incorrect!");
                     System.out.println("");
                 }
             }
 
             else if (reply_for_premenu == 2 && registered_user == true) {
+                clearTerminal();
                 System.out.println("You have already registered, please login");
                 System.out.println("");
             }
 
             else if (reply_for_premenu == 1 && registered_user == false) {
+                clearTerminal();
                 System.out.println("You haven't registered yet, register first");
                 System.out.println("");
             }
@@ -104,7 +108,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner Scanner3 = new Scanner(System.in);
+        AssignmentWork method = new AssignmentWork();
         preMenu();                                                              // ######### PRE MENU #########
 
         boolean back_to_premenu = false;                                        // ######### MAIN MENU #########
@@ -116,16 +120,16 @@ public class Main {
             System.out.println("|=======================|");
             System.out.println("|       MAIN MENU       |");
             System.out.println("|=======================|");
-            System.out.println("1- Climate Change Infodesk 1");
-            System.out.println("2- Climate Change Quiz 2");
-            System.out.println("3- Climate Change Personality 3");
-            System.out.println("4- Random Climate Change Facts 4");
-            System.out.println("5- Country's Seasons 5");
+            System.out.println("1- Climate Change Infodesk");
+            System.out.println("2- Climate Change Quiz");
+            System.out.println("3- Climate Change Personality");
+            System.out.println("4- Random Climate Change Facts");
+            System.out.println("5- Country's Seasons");
             System.out.println("6- Back to PRE MENU");
             System.out.print("Select your choice: ");
-            reply_for_mainmenu = Scanner3.nextInt();
+            reply_for_mainmenu = method.verifyMMInput();
             System.out.println("");
-            AssignmentWork method = new AssignmentWork();
+
 
             // Methods
             if (reply_for_mainmenu == 1) {

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class AssignmentWork {
 
-    private int verifyInput()
+    public int verifyInput()
 	{
         int usrInput = -1;
         Scanner kb = new Scanner(System.in);
@@ -19,6 +19,58 @@ public class AssignmentWork {
 				System.out.print("\nEnter your selection : \n");
 				usrInput = Integer.parseInt(kb.nextLine()); 
                 if (usrInput < 1 || usrInput > 4)
+                    {
+                        System.out.println("Invalid Selection. Please Try again.");
+                    }
+			}
+			catch(NumberFormatException e)
+			{
+				System.out.println("Invalid Selection. Please Try again.");
+			}
+		}
+
+        return (usrInput);
+
+    }
+
+    public int verifyMMInput()
+	{
+        int usrInput = -1;
+        Scanner kb = new Scanner(System.in);
+
+		while(usrInput < 1 || usrInput > 6)
+		{
+			try
+			{
+				System.out.print("\nEnter your selection : \n");
+				usrInput = Integer.parseInt(kb.nextLine()); 
+                if (usrInput < 1 || usrInput > 6)
+                    {
+                        System.out.println("Invalid Selection. Please Try again.");
+                    }
+			}
+			catch(NumberFormatException e)
+			{
+				System.out.println("Invalid Selection. Please Try again.");
+			}
+		}
+
+        return (usrInput);
+
+    }
+
+    public int verifyPMInput()
+	{
+        int usrInput = -1;
+        Scanner kb = new Scanner(System.in);
+
+		while(usrInput < 1 || usrInput > 3)
+		{
+			try
+			{
+				System.out.print("\nEnter your selection : \n");
+				usrInput = Integer.parseInt(kb.nextLine()); 
+                if (usrInput < 1 || usrInput > 3)
                     {
                         System.out.println("Invalid Selection. Please Try again.");
                     }
