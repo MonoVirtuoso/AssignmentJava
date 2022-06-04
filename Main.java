@@ -17,6 +17,7 @@ public class Main {
     private static int reply_for_mainmenu;
 
     static void preMenu() {
+        clearTerminal();
         AssignmentWork method = new AssignmentWork();
         Scanner Scanner1 = new Scanner(System.in);
         Scanner Scanner2 = new Scanner(System.in);
@@ -25,13 +26,6 @@ public class Main {
         boolean done_with_program = false;
 
         while (done_with_program == false && loggedin_user == false) {
-            System.out.println("|=======================|");
-            System.out.println("|        PRE MENU       |");
-            System.out.println("|=======================|");
-            System.out.println("1- Login");
-            System.out.println("2- Register");
-            System.out.println("3- Exit");
-            System.out.print("Select your choice: ");
             int reply_for_premenu = method.verifyPMInput();
             System.out.println("");
 

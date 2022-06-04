@@ -61,6 +61,13 @@ public class AssignmentWork {
 
     public int verifyPMInput()
 	{
+        System.out.println("|=======================|");
+        System.out.println("|        PRE MENU       |");
+        System.out.println("|=======================|");
+        System.out.println("1- Login");
+        System.out.println("2- Register");
+        System.out.println("3- Exit");
+        System.out.print("Select your choice: ");
         int usrInput = -1;
         Scanner kb = new Scanner(System.in);
 
@@ -72,12 +79,28 @@ public class AssignmentWork {
 				usrInput = Integer.parseInt(kb.nextLine()); 
                 if (usrInput < 1 || usrInput > 3)
                     {
-                        System.out.println("Invalid Selection. Please Try again.");
+                        Main.clearTerminal();
+                        System.out.println("|=======================|");
+                        System.out.println("|        PRE MENU       |");
+                        System.out.println("|=======================|");
+                        System.out.println("1- Login");
+                        System.out.println("2- Register");
+                        System.out.println("3- Exit");
+
+                        System.out.println("Invalid Selection. Please Try again:");
                     }
 			}
 			catch(NumberFormatException e)
 			{
-				System.out.println("Invalid Selection. Please Try again.");
+                Main.clearTerminal();
+                System.out.println("|=======================|");
+                System.out.println("|        PRE MENU       |");
+                System.out.println("|=======================|");
+                System.out.println("1- Login");
+                System.out.println("2- Register");
+                System.out.println("3- Exit");
+
+				System.out.println("Invalid Selection. Please Try again:");
 			}
 		}
 
