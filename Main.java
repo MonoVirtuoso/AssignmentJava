@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Main {
 
+    static void clearTerminal(){        
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
     private static String username_register;
     private static String password_register;
     private static String username_login;
@@ -18,6 +23,7 @@ public class Main {
         boolean done_with_program = false;
 
         while (done_with_program == false && loggedin_user == false) {
+            clearTerminal();
             System.out.println("|=======================|");
             System.out.println("|        PRE MENU       |");
             System.out.println("|=======================|");
@@ -30,6 +36,7 @@ public class Main {
 
 
             if (reply_for_premenu == 2 && registered_user == false) {             // ######### REGISTER MENU #########
+                clearTerminal();
                 System.out.println("***   REGISTER MENU   ***");
 
                 System.out.print("Username: ");
@@ -47,6 +54,7 @@ public class Main {
             }
 
             else if (reply_for_premenu == 1 && registered_user == true) {          // ######### LOGIN MENU #########
+                clearTerminal();
 
                 System.out.println("***   LOGIN MENU   ***");
 
@@ -84,7 +92,7 @@ public class Main {
 
             else if (reply_for_premenu == 3) {
                 done_with_program = true;
-                System.out.println("Program quited");                         // ######### QUITED #########
+                System.out.println("Program exited");                         // ######### QUITED #########
                 System.exit(0);
             }
 
@@ -104,6 +112,7 @@ public class Main {
         boolean done_with_program = false;
         boolean loggedin_user = true;
         while (reply_for_mainmenu != 5 || done_with_program == true || loggedin_user == true) {
+            clearTerminal();
             System.out.println("|=======================|");
             System.out.println("|       MAIN MENU       |");
             System.out.println("|=======================|");
@@ -120,31 +129,44 @@ public class Main {
 
             // Methods
             if (reply_for_mainmenu == 1) {
+                clearTerminal();
                 ccMenu ccMenu = new ccMenu();
 		        ccMenu.menuProcess();
+                clearTerminal();
 
-
-                System.out.println();
             } // Menu 1:
 
             else if (reply_for_mainmenu == 2) {
+                clearTerminal();
                 method.Quiz();
+                method.exit();
+
             } // Menu 2
             else if (reply_for_mainmenu == 3) {
+                clearTerminal();
                 method.MBTI();
+                method.exit();
+
             } // Menu 3:
 
             else if (reply_for_mainmenu == 4) {
+                clearTerminal();
                 randomfunfact randommethod = new randomfunfact();
                 randommethod.randomFF();;
+                method.exit();
+
             } // Menu 4:
 
             else if (reply_for_mainmenu == 5) {
+                clearTerminal();
                 season seasonmethod = new season();
                 seasonmethod.seasons();
+                method.exit();
+                
             } // Menu 5:
 
             else if (reply_for_mainmenu == 6) {
+                clearTerminal();
                 System.out.println();                                              // Menu 5: BACK TO PRE-MENU
                 back_to_premenu = false;
                 loggedin_user = true;

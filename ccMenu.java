@@ -74,7 +74,7 @@ public class ccMenu
 			}
 			catch(NumberFormatException e)
 			{
-				System.out.println("Did you just type something thats not a number?? Great Job. Try again.");
+				System.out.println("Invalid input, please enter a valid number.");
 			}
 		}
 		return(usrInput);
@@ -102,7 +102,7 @@ public class ccMenu
 				ccCombat();
 				break;
 			default:
-				System.out.println("An unexpected error has occured. Great Job.");
+				System.out.println("An unexpected error has occured.");
 		}
 	}
 

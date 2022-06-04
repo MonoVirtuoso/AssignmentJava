@@ -16,7 +16,7 @@ public class AssignmentWork {
 		{
 			try
 			{
-				System.out.print("\nEnter your selection : ");
+				System.out.print("\nEnter your selection : \n");
 				usrInput = Integer.parseInt(kb.nextLine()); 
                 if (usrInput < 1 || usrInput > 4)
                     {
@@ -73,6 +73,8 @@ public class AssignmentWork {
 
         
         int answer = verifyInput();
+
+        Main.clearTerminal();
         
         switch (answer){
             case 1: 
@@ -94,6 +96,8 @@ public class AssignmentWork {
 
         answer = verifyInput();
 
+        Main.clearTerminal();
+
         switch (answer){
             case 1: 
                 System.out.println("Wrong");
@@ -112,6 +116,8 @@ public class AssignmentWork {
         System.out.println("\n\nWhat is a Greenhouse Gas?\n\n1 - A gaseous compound able to emit and absorb radiant energy from within the thermal infrared range\n2 - Gases with the colour green\n3 - Gases emitted from houses that are green\n4 - Gases emitted from the plants inside of greenhouses\n"); 
 
         answer = verifyInput();
+
+        Main.clearTerminal();
 
         switch (answer){
             case 1: 
@@ -133,6 +139,8 @@ public class AssignmentWork {
 
         answer = verifyInput();
 
+        Main.clearTerminal();
+
         switch (answer){
             case 1: 
                 System.out.println("Wrong");
@@ -152,6 +160,8 @@ public class AssignmentWork {
         System.out.println("\n\nWhat does the term renewable energy mean?\n\n1 - Energy that has to be renewed annually\n2 - Energy resources that are new\n3 - Energy that comes from natural resources on Earth that are not finite or exhaustible\n4 - Energy that comes from people that are not finite or exhaustible\n"); 
 
         answer = verifyInput();
+
+        Main.clearTerminal();
 
         switch (answer){
             case 1: 
@@ -173,6 +183,8 @@ public class AssignmentWork {
 
         answer = verifyInput();
 
+        Main.clearTerminal();
+
         switch (answer){
             case 1: 
                 System.out.println("Wrong");
@@ -193,6 +205,8 @@ public class AssignmentWork {
 
         answer = verifyInput();
 
+        Main.clearTerminal();
+
         switch (answer){
             case 1: 
                 System.out.println("Correct!");
@@ -207,6 +221,8 @@ public class AssignmentWork {
 
         answer = verifyInput();
 
+        Main.clearTerminal();
+
         switch (answer){
             case 1: 
                 System.out.println("Correct!");
@@ -220,6 +236,8 @@ public class AssignmentWork {
         System.out.println("\n\nWhat date does Earth Day take place?\n\n1 - 20th June\n2 - 22nd April\n3 - 1st August\n4 - 24th December\n"); 
 
         answer = verifyInput();
+
+        Main.clearTerminal();
 
         switch (answer){
             case 1: 
@@ -241,6 +259,8 @@ public class AssignmentWork {
 
         answer = verifyInput();
 
+        Main.clearTerminal();
+
         switch (answer){
             case 1: 
                 System.out.println("Wrong");
@@ -257,6 +277,8 @@ public class AssignmentWork {
                 break;
         }
 
+        Main.clearTerminal();
+
         System.out.println("Congratulations! Your score for the quiz is " + score);
         
         return score;          
@@ -269,7 +291,7 @@ public class AssignmentWork {
         System.out.println("Welcome to 21Green's Climate Change MBTI Assignment!\n"
         + "\nYou may enter your personality type according to the MBTI test and be assigned a specific class which identifies\n"
         + "what type of defender you are against climate change. E.g.: INFP"
-        + "If you have do not know your personality type, you may take the MBTI test at https://www.16personalities.com/free-personality-test\n\n");
+        + "\n\nIf you have do not know your personality type, you may take the MBTI test at https://www.16personalities.com/free-personality-test\n\n");
         
 
         String userAnswer = verifyStringInput();
@@ -278,62 +300,126 @@ public class AssignmentWork {
         {
             
             case "INTJ":
+                Main.clearTerminal();
                 System.out.println("You are one of the Informed");
                 System.out.println("Determined and rational, you contribute to the fight against Climate Change by ensuring the information\nconsumed is correct and evidence-based, thereby negating the effects of misinformation.");
+                break;
 
             case "INTP":
+                Main.clearTerminal();
                 System.out.println("You are one of the Innovators");
                 System.out.println("Driven by curiosity and receptive to new ideas,the Innovator contribute to Climate Change by finding creative solutions\nto combat Climate Change, be it an invention or method to do so.");
+                break;
 
             case "ENTJ":
+                Main.clearTerminal();
                 System.out.println("You are one of the Leaders");
-                System.out.println("");
+                System.out.println("Invigorating and inspiring, the Leaders contribute to Climate Change by inspiring others to participate \nin efforts against Climate Change.");
+                break;
 
             case "ENTP":
-                System.out.println("You are one of the Charismatics");
-                System.out.println("");
+                Main.clearTerminal();
+                System.out.println("You are one of the Brainstormers");
+                System.out.println("Quick thinking and original, the Brainstormers contribute to Climate Change by using the knowledge they learned\nto find out-of-the-box solutions for Climate Change.");
+                break;
 
             case "INFJ":
-                System.out.println("You are one of the Principled")
-                System.out.println("");
-
+                Main.clearTerminal();
+                System.out.println("You are one of the Principled");
+                System.out.println("Dedication to their value and beliefs, the Principled contribute to Climate Change by keeping enviromental\nfriendly principles and sharing their ideals with their fellows.");
+                break;
             case "INFP":
+                Main.clearTerminal();
                 System.out.println("You are one of the Empathetic");
-                System.out.println("");
+                System.out.println("Sensitive towards the problems of others, the Empathetic help efforts against Climate Change through\nunderstanding the perspectives of those affected by Climate Change");
+                break;
 
             case "ENFJ":
-                System.out.println("You are one of the Altruistics");
-                System.out.println("");
+                Main.clearTerminal();
+                System.out.println("You are one of the Altruists");
+                System.out.println("Passionate and inspiring, Altruists bring together people to become a united force against\nClimate Change with their charisma and their passionate qualities.");
+                break;
 
             case "ENFP":
+                Main.clearTerminal();
                 System.out.println("You are one of the Enthusiasts");
-                System.out.println("");
+                System.out.println("Perceptive and curious, Enthusiasts are excellent communicators and as such are usually\ngreat representatives for efforts against Climate Change.");
+                break;
 
             case "ISTJ":
+                Main.clearTerminal();
+                System.out.println("You are one of the Enforcers");
+                System.out.println("Effective and efficient, the Enforcers help efforts against Climate Change through\npreventing others from committing acts that harm the environment.");
+                break;
 
             case "ISFJ":
+                Main.clearTerminal();
+                System.out.println("You are one of the Supporters");
+                System.out.println("Reliable and enthusiastic, Supporters contribute to actions against Climate Change by helping others\naffected by Climate Change through charity runs or volunteer work.");
+                break;
 
             case "ESTJ":
+                Main.clearTerminal();
+                System.out.println("You are one of the Dedicated");
+                System.out.println("Organized and direct, the Dedicated help efforts against Climate Change through volunteering\nin Climate Change campaigns and fundraisers to help those in need.");
+                break;
 
             case "ESFJ":
+                Main.clearTerminal();
+                System.out.println("You are one of the Dutiful");
+                System.out.println("Individuals with a strong sense of responsibility, the Dutiful contribute to Climate Change efforts by\nmanaging and organizing Climate Change campaigns and events to raise awareness.");
+                break;
 
             case "ISTP":
+                Main.clearTerminal();
+                System.out.println("You are one of the Optimists");
+                System.out.println("Energetic and positive, the Optimists sustain the morale of those fighting against Climate Change\nand keep the hope of a better future alive with their optimistic attitude.");
+                break;
 
             case "ISFP":
+                Main.clearTerminal();
+                System.out.println("You are one of the Journeyman");
+                System.out.println("Artistic and adventurous, the Journeyman help efforts against Climate Change through\nvisualizations of Climate Change with art that shows a better future or the effects of Climate Change.");
+                break;
 
             case "ESTP":
+                Main.clearTerminal();
+                System.out.println("You are one of the Bold");
+                System.out.println("Brave and perceptive, the Bold contribute to efforts against Climate Change by initiating\nlarge impactful events such as debates, campaigns and are quick to put down misinformation.");
+                break;
 
             case "ESFP":
-
-            default:
-                
+                Main.clearTerminal();
+                System.out.println("You are one of the Showmen");
+                System.out.println("Creative and confident, the Showmen help efforts against Climate Change through the entertainment\nthey create, be it in a form of a play or media that spreads awareness on Climate Change.");
+                break;
             
         }
         
     }
 
-    public void NasaReport()
-    {
+    public int exit(){
+        int usrInput = -1;
+        Scanner kb = new Scanner(System.in);
+
+		while(usrInput != 0)
+		{
+			try
+			{
+				System.out.print("\nEnter 0 to return to the main menu : ");
+				usrInput = Integer.parseInt(kb.nextLine()); 
+                if (usrInput !=0 )
+                    {
+                        System.out.println("Invalid Selection. Please Try again.");
+                    }
+			}
+			catch(NumberFormatException e)
+			{
+				System.out.println("Invalid Selection. Please Try again.");
+			}
+		}
+
+        return (usrInput);
 
     }
 
