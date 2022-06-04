@@ -17,7 +17,7 @@ public class Main {
     private static int reply_for_mainmenu;
 
     static void preMenu() {
-        clearTerminal();
+        Main.clearTerminal();
         AssignmentWork method = new AssignmentWork();
         Scanner Scanner1 = new Scanner(System.in);
         Scanner Scanner2 = new Scanner(System.in);
@@ -120,8 +120,7 @@ public class Main {
             System.out.println("4- Random Climate Change Facts");
             System.out.println("5- Country's Seasons");
             System.out.println("6- Back to PRE MENU");
-            System.out.print("Select your choice: ");
-            reply_for_mainmenu = method.verifyMMInput();
+            reply_for_mainmenu = method.verifyInput(1 , 6);
             System.out.println("");
 
 
@@ -137,13 +136,11 @@ public class Main {
             else if (reply_for_mainmenu == 2) {
                 clearTerminal();
                 method.Quiz();
-                method.exit();
 
             } // Menu 2
             else if (reply_for_mainmenu == 3) {
                 clearTerminal();
                 method.MBTI();
-                method.exit();
 
             } // Menu 3:
 
@@ -159,7 +156,6 @@ public class Main {
                 clearTerminal();
                 season seasonmethod = new season();
                 seasonmethod.seasons();
-                method.exit();
                 
             } // Menu 5:
 

@@ -24,6 +24,7 @@ public class ccMenu
 
 	public void printHeader()
 	{
+		Main.clearTerminal();
 		System.out.println("+----------------------------------------------+");
 		System.out.println("|         Welcome to the Climate Change        |");
 		System.out.println("|                                              |");
@@ -55,7 +56,7 @@ public class ccMenu
 			}
 			catch(NumberFormatException e)
 			{
-				System.out.println("Did you just type something thats not a number?? Great Job. Try again.");
+				System.out.println("Invalid Selection. Please Try again:");
 			}
 		}
 		return(usrInput);
@@ -108,6 +109,7 @@ public class ccMenu
 
 	private void ccCauses()
 	{
+		Main.clearTerminal();
 		int exitInt = -1;
 		System.out.println("+-------------------------------------+");
 		System.out.println("|              Causes of              |");
@@ -165,6 +167,7 @@ public class ccMenu
 
 	private void ccEffects()
 	{
+		Main.clearTerminal();
 		int exitInt = -1;
 		System.out.println("+-------------------------------------+");
 		System.out.println("|              Effects of             |");
@@ -222,6 +225,7 @@ public class ccMenu
 
 	private void ccCombat()
 	{
+		Main.clearTerminal();
 		int exitInt = -1;
 		System.out.println("+-------------------------------------+");
 		System.out.println("|        Methods used to combat       |");
