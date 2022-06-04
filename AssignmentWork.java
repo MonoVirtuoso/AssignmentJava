@@ -41,18 +41,17 @@ public class AssignmentWork {
         System.out.println("|=======================|");
         System.out.println("1- Login");
         System.out.println("2- Register");
-        System.out.println("3- Exit");
-        System.out.print("Select your choice: ");
+        System.out.println("0- Exit");
         int usrInput = -1;
         Scanner kb = new Scanner(System.in);
 
-		while(usrInput < 1 || usrInput > 3)
+		while(usrInput < 0 || usrInput > 2)
 		{
 			try
 			{
 				System.out.print("\nEnter your selection : \n");
 				usrInput = Integer.parseInt(kb.nextLine()); 
-                if (usrInput < 1 || usrInput > 3)
+                if (usrInput < 0 || usrInput > 2)
                     {
                         Main.clearTerminal();
                         System.out.println("|=======================|");
@@ -60,7 +59,7 @@ public class AssignmentWork {
                         System.out.println("|=======================|");
                         System.out.println("1- Login");
                         System.out.println("2- Register");
-                        System.out.println("3- Exit");
+                        System.out.println("0- Exit");
 
                         System.out.println("Invalid Selection. Please Try again:");
                     }
@@ -88,14 +87,15 @@ public class AssignmentWork {
     {
         Boolean checker = false;
         String[] allowedEntries = {"INTJ", "INTP", "ENTJ", "ENTP", "INJF", "INFP", "ENFJ", "ENFP", "ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP", "0"};
-        String usrMBTI = "";
+        String usrMBTI = "", usrRealMBTI = "";
         while (checker == false)  {  
             Scanner userInput = new Scanner(System.in);
             usrMBTI = userInput.next();
+            usrRealMBTI = usrMBTI.toUpperCase();
 
             for (int i = 0; i < 17; i++)
             {
-                if (usrMBTI.equals(allowedEntries[i])) 
+                if (usrRealMBTI.equals(allowedEntries[i])) 
                 {
                     checker = true;
                     break;
@@ -107,8 +107,8 @@ public class AssignmentWork {
             }
         }    
 
+        return (usrRealMBTI);
 
-        return (usrMBTI);
     }
     
 

@@ -84,11 +84,8 @@ public class Main {
                 System.out.println("");
             }
 
-            else if (reply_for_premenu == 0) {
-                loggedin_user = true;
-            }
 
-            else if (reply_for_premenu == 3) {
+            else if (reply_for_premenu == 0) {
                 done_with_program = true;
                 System.out.println("Program exited");                         // ######### QUITED #########
                 System.exit(0);
@@ -114,13 +111,13 @@ public class Main {
             System.out.println("|=======================|");
             System.out.println("|       MAIN MENU       |");
             System.out.println("|=======================|");
-            System.out.println("1- Climate Change Infodesk");
-            System.out.println("2- Climate Change Quiz");
-            System.out.println("3- Climate Change Personality");
-            System.out.println("4- Random Climate Change Facts");
-            System.out.println("5- Country's Seasons");
-            System.out.println("6- Back to PRE MENU");
-            reply_for_mainmenu = method.verifyInput(1 , 6);
+            System.out.println("1 - Climate Change Infodesk");
+            System.out.println("2 - Climate Change Quiz");
+            System.out.println("3 - Climate Change Personality");
+            System.out.println("4 - Random Climate Change Facts");
+            System.out.println("5 - Country's Seasons");
+            System.out.println("0 - Back to PRE MENU");
+            reply_for_mainmenu = method.verifyInput(0 , 5);
             System.out.println("");
 
 
@@ -159,7 +156,7 @@ public class Main {
                 
             } // Menu 5:
 
-            else if (reply_for_mainmenu == 6) {
+            else if (reply_for_mainmenu == 0) {
                 clearTerminal();
                 System.out.println();                                              // Menu 5: BACK TO PRE-MENU
                 back_to_premenu = false;
