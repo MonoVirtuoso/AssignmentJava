@@ -103,7 +103,7 @@ public class AssignmentWork {
             }
             if(checker == false)
             {
-                System.out.println("Incorrect value entered, please enter one of the personality types. E.g. : ENTJ\nNote: It is case sensitive.");
+                System.out.println("Incorrect value entered, please enter one of the personality types. E.g. : ENTJ\n");
             }
         }    
 

@@ -4,22 +4,20 @@ import java.util.Scanner;
 
 public class ccMenu
 {
-	public static void main(String[] args) {
-		ccMenu ccMenu = new ccMenu();
-		ccMenu.menuProcess();
-	}
+	AssignmentWork method = new AssignmentWork();
+	boolean exit = false;
 
-	boolean exit;
 
 	public void menuProcess()
 	{
 		printHeader();
 		printMenu();
-		while(!exit)
+		while(exit != true)
 		{
-			int usrInput = getInput();
+			int usrInput = method.verifyInput(0,3);
 			performAction(usrInput);
 		}
+		
 	}
 
 	public void printHeader()
@@ -43,24 +41,6 @@ public class ccMenu
 		System.out.println("0. Exit");
 	}
 
-	private int getInput()
-	{
-		Scanner kb = new Scanner(System.in);
-		int usrInput = -1;
-		while(usrInput < 0 || usrInput > 3)
-		{
-			try
-			{
-				System.out.print("\nEnter your selection : ");
-				usrInput = Integer.parseInt(kb.nextLine());
-			}
-			catch(NumberFormatException e)
-			{
-				System.out.println("Invalid Selection. Please Try again:");
-			}
-		}
-		return(usrInput);
-	}
 
 	private int exitPrompt()
 	{
@@ -87,11 +67,11 @@ public class ccMenu
 		switch(usrInput)
 		{
 			case 0:
-				exit = true;
 				System.out.println("+-------------------------------------+");
 				System.out.println("| Thanks for using the Climate Change |");
 				System.out.println("|           ---Infodesk---            |");
 				System.out.println("+-------------------------------------+");
+				exit = true;
 				break;
 			case 1:
 				ccCauses();
@@ -120,7 +100,7 @@ public class ccMenu
 		System.out.println("3. Deforestation");
 		System.out.println("4. Inefficient Usage of Transportation Methods");
 		System.out.println("0. Exit back to Infodesk");
-		switch(getInput())
+		switch(method.verifyInput(0,4))
 		{
 			case 1:
 				System.out.println("https://www.iea.org/commentaries/if-the-energy-sector-is-to-tackle-climate-change-it-must-also-think-about-water");
@@ -178,7 +158,7 @@ public class ccMenu
 		System.out.println("3. Increased Severity of Natural Disasters");
 		System.out.println("4. A Warming, Rising Ocean");
 		System.out.println("0. Exit back to Infodesk");
-		switch(getInput())
+		switch(method.verifyInput(0,4))
 		{
 			case 1:
 				System.out.println("https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature#:~:text=According%20to%20NOAA%27s%202020%20Annual,more%20than%20twice%20that%20rate.");
@@ -236,7 +216,7 @@ public class ccMenu
 		System.out.println("3. Reducing, Reusing and Recyling");
 		System.out.println("4. Changing Homes' sources of energy");
 		System.out.println("0. Exit back to Infodesk");
-		switch(getInput())
+		switch(method.verifyInput(0,4))
 		{
 			case 1:
 				System.out.println("https://19january2017snapshot.epa.gov/climatechange/what-you-can-do-home_.html");
